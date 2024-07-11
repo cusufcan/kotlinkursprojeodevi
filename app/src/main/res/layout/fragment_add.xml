@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddFragment">
+
+    <ImageView
+        android:id="@+id/artImage"
+        android:layout_width="320dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/select_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/artNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Art Name"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/artImage"
+        app:layout_constraintStart_toStartOf="@+id/artImage"
+        app:layout_constraintTop_toBottomOf="@+id/artImage" />
+
+    <EditText
+        android:id="@+id/artistNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Artist Name"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/artNameText"
+        app:layout_constraintStart_toStartOf="@+id/artNameText"
+        app:layout_constraintTop_toBottomOf="@+id/artNameText" />
+
+    <EditText
+        android:id="@+id/artYearText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/artistNameText"
+        app:layout_constraintStart_toStartOf="@+id/artistNameText"
+        app:layout_constraintTop_toBottomOf="@+id/artistNameText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SAVE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/artYearText"
+        app:layout_constraintStart_toStartOf="@+id/artYearText"
+        app:layout_constraintTop_toBottomOf="@+id/artYearText" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DELETE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/artYearText"
+        app:layout_constraintStart_toStartOf="@+id/artYearText"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
